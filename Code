@@ -1,0 +1,34 @@
+n1 = float(input(':'))
+n2 = float(input(':'))
+op = input(":")
+def calc(n1,n2,op):
+    if op == '+':
+        print(n1 + n2)
+    elif op == '-':
+        print(n1 - n2)
+    elif op == '*':
+        print(n1 * n2)
+    elif op == '/':
+        print(n1 / n2)
+    else:
+        print('Invalid operator')
+def analise(n1,n2):
+    if n1 == round (n1):
+        print(n1,'Is decimal')
+    if n1  % 2 == 0:
+        print(n1,'Is even')
+    if n1 > 0:
+        print(n1,'Is positive')
+    if n1 < 0:
+        print(n1,'Is negative')
+
+    if n2 == round (n2):
+        print(n2,'Is decimal')
+    if n2  % 2 == 0:
+        print(n2,'Is even')
+    if n2 > 0:
+        print(n2,'Is positive')
+    if n2 < 0:
+        print(n2,'Is negative')
+calc(n1,n2,op)
+analise(n1,n2)
